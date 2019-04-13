@@ -1,5 +1,10 @@
 package main.java.com.getjavajob.training.gareev.init.gareev;
 
+import main.java.com.getjavajob.training.gareev.init.gareev.bases.coneB;
+import main.java.com.getjavajob.training.gareev.init.gareev.bases.cylinderB;
+import main.java.com.getjavajob.training.gareev.init.gareev.bases.prismB;
+import main.java.com.getjavajob.training.gareev.init.gareev.bases.pyramidB;
+
 import java.util.Scanner;
 
 /**
@@ -14,12 +19,12 @@ public class TaskCh01N003 {
                 "   4 - Prism");
         Scanner sc = new Scanner(System.in);
         int numFigure = sc.nextInt();
-        /*switch(numFigure){
-            case 1: int baseRadius1 = sc.nextInt(); int coneHeight1 = sc.nextInt();break;
-            case 2: int numOfCorn = sc.nextInt(); int lengthOfEdges2 = sc.nextInt(); int pyramidHeight = sc.nextInt();break;
-            case 3:  int baseRadius3 = sc.nextInt(); int cylinderHeight = sc.nextInt();break;
-            case 4: int numOfAngle= sc.nextInt();int lengthOfEdges4 =sc.nextInt();int prismHeight = sc.nextInt();break;
-        }*/
+         switch(numFigure){
+            case 1: new coneB(sc.nextInt(), sc.nextInt()); break;
+            case 2: new cylinderB(sc.nextInt(), sc.nextInt(), sc.nextInt());break;
+            case 3: new prismB(sc.nextInt(), sc.nextInt()); break;
+            case 4: new pyramidB(sc.nextInt(), sc.nextInt(), sc.nextInt()); break;
+        }
 
 
     }
