@@ -1,18 +1,15 @@
-package main.java.com.getjavajob.training.gareev.init.gareev;
+package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases;
 
 /**
  * Created by Denis on 13.04.2019.
  */
-public abstract class chooseFigure {
+public abstract class base {
     private int radius;
     private int height;
     private int numOfAngles;
+    private int lngthOfEdge;
 
-    public chooseFigure(int radius, int height, int numOfAngles){
-        this.radius =  radius;
-        this.height =  height;
-        this.numOfAngles =  numOfAngles;
-    }
+
 
     public int getRadius() {
         return this.radius =  radius;
@@ -23,14 +20,20 @@ public abstract class chooseFigure {
     public int getNumOfAngles() {
         return this.numOfAngles =  numOfAngles;
     }
-    public void setRadius() {
+    public int getLngthOfEdge() {
+        return this.lngthOfEdge =  lngthOfEdge;
+    }
+    public void setRadius(int radius) {
          this.radius =  radius;
     }
-    public void setHeight() {
+    public void setHeight(int height) {
          this.height =  height;
     }
-    public void setNumOfAngles() {
+    public void setNumOfAngles(int numOfAngles) {
          this.numOfAngles =  numOfAngles;
+    }
+    public void setLngthOfEdge(int lngthOfEdge) {
+        this.lngthOfEdge =  lngthOfEdge;
     }
 
 }
