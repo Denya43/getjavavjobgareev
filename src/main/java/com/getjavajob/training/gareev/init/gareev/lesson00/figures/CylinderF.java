@@ -1,13 +1,13 @@
 package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.figures;
 
 
-import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.cylinderB;
+import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.CylinderB;
 
 /**
  * Created by Denis on 13.04.2019.
  */
-public class cylinderF extends cylinderB {
-    public cylinderF(int radius, int height) {
+public class CylinderF extends CylinderB {
+    public CylinderF(int radius, int height) {
         super(radius, height);
     }
     public double sectionalArea(int radius, double numOfAngels, int lngthOfEdge, int heightSection) {

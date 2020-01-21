@@ -3,8 +3,8 @@ package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases;
 /**
  * Created by Denis on 13.04.2019.
  */
-public class prismB extends basePolygon {
-    public prismB(int height, int numOfAngels, int lngthOfEdge) {
+public class PrismB extends BasePolygon {
+    public PrismB(int height, int numOfAngels, int lngthOfEdge) {
         super(height, numOfAngels, lngthOfEdge);
     }
 

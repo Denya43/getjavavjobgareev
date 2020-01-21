@@ -3,7 +3,7 @@ package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases;
 /**
  * Created by Denis on 13.04.2019.
  */
-public abstract class base {
+public abstract class Base {
     private int radius;
     private int height;
     private int numOfAngles;

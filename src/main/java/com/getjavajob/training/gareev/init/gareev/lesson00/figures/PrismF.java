@@ -1,17 +1,15 @@
 package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.figures;
 
-import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.baseRound;
-import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.coneB;
+
+import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.PrismB;
 
 /**
  * Created by Denis on 13.04.2019.
  */
-public class coneF extends coneB {
-    public coneF(int radius, int height) {
-        super(radius, height);
+public class PrismF extends PrismB {
+    public PrismF(int height, int numOfAngels, int lngthOfEdge) {
+        super(height, numOfAngels, lngthOfEdge);
     }
-
-
     public double sectionalArea(int radius, double numOfAngels, int lngthOfEdge, int heightSection) {
         return Math.pow(radius,2)*Math.pow(radius*2/heightSection,2);
     }

@@ -3,8 +3,8 @@ package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases;
 /**
  * Created by Denis on 14.04.2019.
  */
-public abstract class basePolygon extends base {
-    public basePolygon(int height, int numOfAngels, int LngthOfEdge){
+public abstract class BasePolygon extends Base {
+    public BasePolygon(int height, int numOfAngels, int LngthOfEdge){
         height = getHeight();
         numOfAngels = getNumOfAngles();
          LngthOfEdge = getLngthOfEdge();
