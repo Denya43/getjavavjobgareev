@@ -1,13 +1,12 @@
 package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.figures;
 
-
-import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.PrismB;
+import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.PyramidB;
 
 /**
- * Created by Denis on 13.04.2019.
+ * Created by Denis on 22.01.2020.
  */
-public class PrismF extends PrismB {
-    public PrismF(int height, int numOfAngels, int lngthOfEdge) {
+public class Pyramid extends PyramidB {
+    public Pyramid(int height, int numOfAngels, int lngthOfEdge) {
         super(height, numOfAngels, lngthOfEdge);
     }
     public double sectionalArea(int radius, double numOfAngels, int lngthOfEdge, int heightSection) {

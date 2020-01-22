@@ -9,8 +9,6 @@ public abstract class Base {
     private int numOfAngles;
     private int lngthOfEdge;
 
-
-
     public int getRadius() {
         return this.radius =  radius;
     }

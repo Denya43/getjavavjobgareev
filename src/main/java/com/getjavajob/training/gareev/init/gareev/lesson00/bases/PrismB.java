@@ -9,7 +9,7 @@ public class PrismB extends BasePolygon {
     }
 
 
-    public double calculateBaseArea(double numOfAngels, int lngthOfEdge) {
-        return (numOfAngels*Math.pow(lngthOfEdge,2)/(4*Math.tan(360/2*numOfAngels)));
-    }
+   // public double calculateBaseArea(double numOfAngels, int lngthOfEdge) {
+     //   return (numOfAngels*Math.pow(lngthOfEdge,2)/(4*Math.tan(360/2*numOfAngels)));
+    //}
 }

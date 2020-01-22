@@ -8,8 +8,8 @@ public class PyramidB extends BasePolygon {
             super(radius, height, numOfAngles);
         }
 
-    @Override
-    public double calculateBaseArea(int radius, double numOfAngels, int lngthOfEdge) {
-        return Math.pow(lngthOfEdge, 2)*Math.sqrt(3)/4;
-    }
+ //   @Override
+   // public double calculateBaseArea(int radius, double numOfAngels, int lngthOfEdge) {
+     //   return Math.pow(lngthOfEdge, 2)*Math.sqrt(3)/4;
+   // }
 }
