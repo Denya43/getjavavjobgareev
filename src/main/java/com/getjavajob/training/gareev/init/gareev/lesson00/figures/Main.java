@@ -11,8 +11,6 @@ import java.util.Scanner;
  * Created by Denis on 13.04.2019.
  */
 public class Main {
-
-
     static void main(String[] args) {
         System.out.println("Enter type of figure \n" +
                 "   1 - Cone\n" +
@@ -23,16 +21,16 @@ public class Main {
         int numFigure = sc.nextInt();
         switch (numFigure) {
             case 1:
-                new ConeB(sc.nextInt(), sc.nextInt());
+                new Cone(sc.nextInt(), sc.nextInt());
                 break;
             case 2:
-                new CylinderB(sc.nextInt(), sc.nextInt());
+                new Cylinder(sc.nextInt(), sc.nextInt());
                 break;
             case 3:
-                new PrismB(sc.nextInt(), sc.nextInt(), sc.nextInt());
+                new Prism(sc.nextInt(), sc.nextInt(), sc.nextInt());
                 break;
             case 4:
-                new PyramidB(sc.nextInt(), sc.nextInt(), sc.nextInt());
+                new Pyramid(sc.nextInt(), sc.nextInt(), sc.nextInt());
                 break;
         }
 
