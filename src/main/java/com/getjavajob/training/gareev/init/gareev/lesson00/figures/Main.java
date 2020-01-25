@@ -11,7 +11,7 @@ import java.util.Scanner;
  * Created by Denis on 13.04.2019.
  */
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         System.out.println("Enter type of figure \n" +
                 "   1 - Cone\n" +
                 "   2 - Pyramid\n" +
