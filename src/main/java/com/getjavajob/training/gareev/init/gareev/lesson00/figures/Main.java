@@ -1,10 +1,5 @@
 package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.figures;
 
-import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.ConeB;
-import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.CylinderB;
-import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.PrismB;
-import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.PyramidB;
-
 import java.util.Scanner;
 
 /**
@@ -19,18 +14,46 @@ public class Main {
                 "   4 - Prism");
         Scanner sc = new Scanner(System.in);
         int numFigure = sc.nextInt();
+         int tempRadius;
+         int tempHeight;
+         int tempNumOfAngles;
+         int tempLngthOfEdge;
+
         switch (numFigure) {
             case 1:
-                new Cone(sc.nextInt(), sc.nextInt());
+                System.out.println("Enter radius");
+                tempRadius = sc.nextInt();
+                System.out.println("Enter height");
+                tempHeight = sc.nextInt();
+                Cone cone = new Cone(tempRadius, tempHeight);
+                System.out.println("Enter height of Section "+cone.sectionalArea(sc.nextInt())+
+                        " surfaceArea "+cone.surfaceArea()+" figureVolume "+cone.figureVolume());
                 break;
             case 2:
-                new Cylinder(sc.nextInt(), sc.nextInt());
+                System.out.println("Enter radius");
+                tempRadius = sc.nextInt();
+                System.out.println("Enter height");
+                tempHeight = sc.nextInt();
+                Cylinder cylinder = new Cylinder(tempRadius, tempHeight);
                 break;
             case 3:
-                new Prism(sc.nextInt(), sc.nextInt(), sc.nextInt());
+                System.out.println("Enter height");
+                tempHeight = sc.nextInt();
+                System.out.println("Enter Number Of Angles");
+                tempNumOfAngles = sc.nextInt();
+                System.out.println("Enter Length Of Edge");
+                tempLngthOfEdge = sc.nextInt();
+                Prism prism = new Prism(tempHeight, tempNumOfAngles, tempLngthOfEdge);
                 break;
             case 4:
-                new Pyramid(sc.nextInt(), sc.nextInt(), sc.nextInt());
+                System.out.println("Enter Radius");
+                tempRadius = sc.nextInt();
+                System.out.println("Enter Height");
+                tempHeight = sc.nextInt();
+                System.out.println("Enter Number Of Angles");
+                tempNumOfAngles = sc.nextInt();
+                Pyramid pyramid = new Pyramid(tempRadius, tempHeight, tempNumOfAngles);
+
                 break;
         }
 
