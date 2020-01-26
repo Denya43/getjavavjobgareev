@@ -1,21 +1,40 @@
 package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.figures;
 
+import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.Base;
 import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases.PyramidB;
+
 
 /**
  * Created by Denis on 22.01.2020.
  */
-public class Pyramid extends PyramidB {
-    public Pyramid(int height, int numOfAngels, int lngthOfEdge) {
-        super(height, numOfAngels, lngthOfEdge);
+public class Pyramid {
+    private final double height;
+    private final int numberOfAngles;
+    private final double edgeLength;
+    private Base pyramidBase;
+
+    public Pyramid(int numberOfAngles, double edgeLength, double height) {
+        pyramidBase = new PyramidB(numberOfAngles, edgeLength);
+        this.numberOfAngles = numberOfAngles;
+        this.edgeLength = edgeLength;
+        this.height = height;
     }
-    public double sectionalArea(int radius, double numOfAngels, int lngthOfEdge, int heightSection) {
-        return Math.pow(radius,2)*Math.pow(radius*2/heightSection,2);
+
+    public double baseArea() {
+        return pyramidBase.area();
     }
-    public double surfaceArea(int radius, int height){
-        return Math.PI*radius*Math.sqrt(Math.pow(radius,2)+Math.pow(height,2));
+
+    public double sectionArea(double sectionHeight) {
+        return Math.pow((height - sectionHeight) / height, 2) * baseArea();
     }
-    public double figureVolume(int radius, int height){
-        return height/3*Math.PI*Math.pow(radius,2);
+
+    public double fullArea() {
+        return numberOfAngles * edgeLength * Math.sqrt(Math.pow(height, 2)
+                + Math.pow(edgeLength / (2 * Math.tan(Math.toRadians(180 / numberOfAngles))), 2)) / 2
+                + baseArea();
+    }
+
+    public double value() {
+        return (baseArea() * height) / 3;
     }
 }

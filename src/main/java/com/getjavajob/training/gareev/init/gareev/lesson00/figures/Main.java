@@ -18,6 +18,7 @@ public class Main {
          int tempHeight;
          int tempNumOfAngles;
          int tempLngthOfEdge;
+         int tempSectional;
 
         switch (numFigure) {
             case 1:
@@ -26,8 +27,10 @@ public class Main {
                 System.out.println("Enter height");
                 tempHeight = sc.nextInt();
                 Cone cone = new Cone(tempRadius, tempHeight);
-                System.out.println("Enter height of Section "+cone.sectionalArea(sc.nextInt())+
-                        " surfaceArea "+cone.surfaceArea()+" figureVolume "+cone.figureVolume());
+                System.out.println("Enter height of Section ");
+                tempSectional = sc.nextInt();
+                System.out.println("Sectional area "+cone.sectionArea(tempSectional)+
+                        " surfaceArea "+cone.fullArea()+" figureVolume "+cone.value());
                 break;
             case 2:
                 System.out.println("Enter radius");
@@ -35,6 +38,8 @@ public class Main {
                 System.out.println("Enter height");
                 tempHeight = sc.nextInt();
                 Cylinder cylinder = new Cylinder(tempRadius, tempHeight);
+                System.out.println("Sectional area "+cylinder.sectionArea()+
+                        " surfaceArea "+cylinder.fullArea()+" figureVolume "+cylinder.value());
                 break;
             case 3:
                 System.out.println("Enter height");
@@ -44,6 +49,8 @@ public class Main {
                 System.out.println("Enter Length Of Edge");
                 tempLngthOfEdge = sc.nextInt();
                 Prism prism = new Prism(tempHeight, tempNumOfAngles, tempLngthOfEdge);
+                System.out.println("Sectional area "+prism.sectionArea()+
+                        " surfaceArea "+prism.fullArea()+" figureVolume "+prism.value());
                 break;
             case 4:
                 System.out.println("Enter Radius");
@@ -52,7 +59,11 @@ public class Main {
                 tempHeight = sc.nextInt();
                 System.out.println("Enter Number Of Angles");
                 tempNumOfAngles = sc.nextInt();
+                System.out.println("Enter height of Section ");
+                tempSectional = sc.nextInt();
                 Pyramid pyramid = new Pyramid(tempRadius, tempHeight, tempNumOfAngles);
+                System.out.println("Sectional area "+pyramid.sectionArea(sc.nextDouble())+
+                        " surfaceArea "+pyramid.fullArea()+" figureVolume "+pyramid.value());
 
                 break;
         }

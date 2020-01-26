@@ -5,7 +5,7 @@ package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.bases;
  */
 public class CylinderB extends BaseRound {
 
-    public CylinderB(int radius, int height) {
-        super(radius, height);
+    public CylinderB(double radius) {
+        super(radius);
     }
 }
