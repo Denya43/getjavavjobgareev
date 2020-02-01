@@ -13,5 +13,12 @@ public class Validator {
         this.validates = new ArrayList<>();
         Collections.addAll(this.validates, validates);
     }
+    public void checkValidates(Product product) throws Exception{
+        for (Validate val : validates){
+            if (!val.validate(product)){
+                throw new Exception(val.getClass().getName());
+            }
+        }
+    }
 
 }
