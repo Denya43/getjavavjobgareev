@@ -5,6 +5,7 @@ import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.onlinestore
 public class ValidateDiscont implements Validate {
     @Override
     public boolean validate(Product product) {
-        return false;
+        Double discount = product.getDiscountSize();
+        return discount > 0 && discount < product.getPrice()*0.2;
     }
 }

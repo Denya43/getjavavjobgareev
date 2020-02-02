@@ -5,6 +5,6 @@ import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.onlinestore
 public class ValidateClientID implements Validate {
     @Override
     public boolean validate(Product product) {
-        return false;
+        return product.getClientID().matches("^[A-ZА-Я]+$");
     }
 }

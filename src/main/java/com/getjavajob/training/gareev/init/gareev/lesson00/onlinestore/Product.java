@@ -9,8 +9,11 @@ public class Product {
     private String clientEmail;
     private String phoneNUmber;
     private String deliveryAddress;
+    private String deliveryDate;
+    private Double availiableNum;
 
-    public Product (String productName, Double requiredNum, Double price, Double discountSize, String clientID, String clientEmail, String phoneNUmber, String deliveryAddress){
+    public Product (String productName, Double requiredNum, Double price, Double discountSize, String clientID,
+                    String clientEmail, String phoneNUmber, String deliveryAddress, String deliveryDate){
         this.productName = productName;
         this.requiredNum =requiredNum;
         this.price = price;
@@ -19,6 +22,7 @@ public class Product {
         this.clientEmail = clientEmail;
         this.phoneNUmber = phoneNUmber;
         this.deliveryAddress = deliveryAddress;
+        this.deliveryDate = deliveryDate;
 
     }
 
@@ -54,4 +58,11 @@ public class Product {
         return productName;
     }
 
+    public String getDeliveryDate() {
+        return deliveryDate;
+    }
+
+    public Double getAvailiableNum() {
+        return availiableNum;
+    }
 }

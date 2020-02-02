@@ -6,6 +6,6 @@ public class ValidateRequiredNum implements Validate
 {
     @Override
     public boolean validate(Product product) {
-        return false;
+        return product.getRequiredNum() > 0 && product.getRequiredNum() <= product.getAvailiableNum();
     }
 }

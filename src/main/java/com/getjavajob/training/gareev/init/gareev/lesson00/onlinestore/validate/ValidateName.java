@@ -5,6 +5,7 @@ import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.onlinestore
 public class ValidateName implements Validate {
     @Override
     public boolean validate(Product product) {
-        return false;
+        String name = product.getProductName();
+        return (name != null && !name.trim().isEmpty());
     }
 }

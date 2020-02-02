@@ -5,6 +5,6 @@ import main.java.com.getjavajob.training.gareev.init.gareev.lesson00.onlinestore
 public class ValidateClientPhone implements  Validate {
     @Override
     public boolean validate(Product product) {
-        return false;
+        return product.getPhoneNUmber().matches("^\\+79[0-9]{9}$");
     }
 }
