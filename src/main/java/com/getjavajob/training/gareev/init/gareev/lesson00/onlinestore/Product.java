@@ -13,7 +13,7 @@ public class Product {
     private Double availiableNum;
 
     public Product (String productName, Double requiredNum, Double price, Double discountSize, String clientID,
-                    String clientEmail, String phoneNUmber, String deliveryAddress, String deliveryDate){
+                    String clientEmail, String phoneNUmber, String deliveryAddress, String deliveryDate, Double availiableNum){
         this.productName = productName;
         this.requiredNum =requiredNum;
         this.price = price;
@@ -23,6 +23,7 @@ public class Product {
         this.phoneNUmber = phoneNUmber;
         this.deliveryAddress = deliveryAddress;
         this.deliveryDate = deliveryDate;
+        this.availiableNum = availiableNum;
 
     }
 
