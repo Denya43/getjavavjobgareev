@@ -37,4 +37,30 @@ public class Pyramid {
     public double value() {
         return (baseArea() * height) / 3;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null || obj.getClass() != this.getClass()) {
+            return false;
+        }
+
+        if (obj == this) {
+            return true;
+        }
+        return  false;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = (int) (prime * result + Double.doubleToLongBits(numberOfAngles));
+        result = (int) (prime * result + Double.doubleToLongBits(height));
+        return result;
+    }
+    @Override
+    public Pyramid clone() throws CloneNotSupportedException {
+        Pyramid pyramid = (Pyramid) super.clone();
+        pyramidBase = new PyramidB(numberOfAngles, edgeLength);
+        return pyramid;
+    }
 }
