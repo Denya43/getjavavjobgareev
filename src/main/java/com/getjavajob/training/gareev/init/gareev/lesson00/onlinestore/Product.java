@@ -1,15 +1,25 @@
 package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.onlinestore;
 
 public class Product {
+    @FieldDescription("Наименование продукта")
     private String productName;
+    @FieldDescription("Количество продукта")
     private Double requiredNum;
+    @FieldDescription("Цена продукта")
     private Double price;
+    @FieldDescription("Скидка на продукт")
     private Double discountSize;
+    @FieldDescription("ID клиента")
     private String clientID;
+    @FieldDescription("Email клиента")
     private String clientEmail;
+    @FieldDescription("Телефонный номер клиента")
     private String phoneNUmber;
+    @FieldDescription("Адрес доставки")
     private String deliveryAddress;
+    @FieldDescription("Дата доставки")
     private String deliveryDate;
+    @FieldDescription("Доступное количесто товара")
     private Double availiableNum;
 
     public Product (String productName, Double requiredNum, Double price, Double discountSize, String clientID,
