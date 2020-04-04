@@ -1,10 +1,14 @@
 package main.java.com.getjavajob.training.gareev.init.gareev.lesson00.figures;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 /**
  * Created by Denis on 13.04.2019.
  */
+
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Enter type of figure \n" +

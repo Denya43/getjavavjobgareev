@@ -17,4 +17,6 @@ abstract class BasePolygon implements Base {
     public double area() {
         return (numberOfAngles * Math.pow(edgeLength, 2)) / (4 * Math.tan(Math.toRadians(180 / numberOfAngles)));
     }
+
+
 }
