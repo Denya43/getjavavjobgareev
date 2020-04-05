@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * Created by Denis on 01.04.2020.
  */
@@ -21,7 +22,7 @@ public abstract class DeserializerXML {
     public DeserializerXML(String nameFile){
         this.nameFile = nameFile;
     }
-    public void ValidatorXSD() throws SAXException, IOException, org.xml.sax.SAXException {
+    public void ValidatorXSD() throws IOException, org.xml.sax.SAXException {
         Source fileXML = new StreamSource(ClassLoader.getSystemResourceAsStream(nameFile));
         List<Source> schemas = new ArrayList<>();
         schemas.add(new StreamSource(ClassLoader.getSystemResourceAsStream("")));

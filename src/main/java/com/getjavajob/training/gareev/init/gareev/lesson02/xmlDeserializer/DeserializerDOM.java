@@ -1,6 +1,5 @@
 package main.java.com.getjavajob.training.gareev.init.gareev.lesson02.xmlDeserializer;
 
-import jdk.internal.org.xml.sax.SAXException;
 import main.java.com.getjavajob.training.gareev.init.gareev.lesson02.organization.Organization;
 import main.java.com.getjavajob.training.gareev.init.gareev.lesson02.person.Person;
 import main.java.com.getjavajob.training.gareev.init.gareev.lesson02.person.ShareOfBusiness;
@@ -8,7 +7,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import sun.nio.ch.FileKey;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -28,7 +26,7 @@ public class DeserializerDOM extends DeserializerXML{
         super(nameFile);
     }
 
-    public List<Organization> fromXML() throws IOException, SAXException, ParserConfigurationException, org.xml.sax.SAXException {
+    public List<Organization> fromXML() throws IOException, org.xml.sax.SAXException, ParserConfigurationException{
         ValidatorXSD();
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
