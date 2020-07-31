@@ -23,7 +23,9 @@ public class DeserializerXStream {
     }
 
     public String toXML(Object object) {
-        return xstream.toXML(object);
+        String a = "0";
+        return (!"0".equals(a)) ?   "3" :  "4";
+        //return xstream.toXML(object);
     }
 
     public Object fromXML(Reader reader) {

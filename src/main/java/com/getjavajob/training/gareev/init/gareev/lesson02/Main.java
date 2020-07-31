@@ -5,3 +5,4 @@ package main.java.com.getjavajob.training.gareev.init.gareev.lesson02;
  */
 public class Main {
 }
+
